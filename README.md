@@ -4,6 +4,8 @@
 개발자 경험 Developer Experience 에 초점이 맞추어져 있습니다.  
 GPL v3 라이센스 하에 오픈소스 프로젝트로 진행되고 있어 많은 기여와 관심 부탁드립니다.
 
+{% embed url="https://github.com/Golden-Goose-Lab/creon" %}
+
 ## 개발자 경험 최우선
 
 {% code title="example.py" %}
@@ -19,14 +21,4 @@ code = creon.name_to_code('삼성전자')
 
 ```
 {% endcode %}
-
-## 설치
-
-pip를 이용해 간단하게 설치할 수 있습니다.
-
-```
-$ pip install creon
-```
-
-
 
