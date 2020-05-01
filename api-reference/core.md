@@ -196,4 +196,59 @@ markets 속성 함수를 통해 시세 정보를 딕셔너리로 리턴합니다
       <td style="text-align:left">&#xC608;&#xC0C1; &#xCCB4;&#xACB0; &#xC218;&#xB7C9;</td>
     </tr>
   </tbody>
-</table>
+</table>**def fetch\_ohlcv\(self, code: str, timeframe: tuple, since: datetime, limit: int, fill\_gap=False, use\_adjusted\_price=True\) -&gt; List\[Candle\]:**  
+aaa
+
+**def get\_holding\_stocks\(self, account\_number: str, flag: str, count: int = 50\) -&gt; dict**  
+wallets 속성 함수를 통해 종합 보유 자산 정보를 딕셔너리로 리턴합니다. 계좌번호와 계좌 플래그를 인자로 받으며 개수는 50개로 선택 인자로 받습니다. 계좌 플래그는 get\_account\_flags 를 통해 얻을 수 있습니다. 반환하는 데이터는 아래와 같습니다.
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#xD0A4;</th>
+      <th style="text-align:left"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">total_expect_valuation</td>
+      <td style="text-align:left">&#xCD1D; &#xD3C9;&#xAC00; &#xAE08;&#xC561;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">remain_deposit</td>
+      <td style="text-align:left">&#xC608;&#xC218;&#xAE08;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">stocks</td>
+      <td style="text-align:left">
+        <p>&#xBCF4;&#xC720; &#xC8FC;&#xC2DD; &#xB515;&#xC154;&#xB108;&#xB9AC; &#xB9AC;&#xC2A4;&#xD2B8;
+          <br
+          />&#xB515;&#xC154;&#xB108;&#xB9AC; &#xC608;
+          <br />{
+          <br />&apos;code&apos;: &#xC885;&#xBAA9;&#xCF54;&#xB4DC;,
+          <br />&apos;name&apos;: &#xC885;&#xBAA9;&#xBA85;,
+          <br />&apos;quantity&apos;: &#xC218;&#xB7C9;,
+          <br />&apos;bought_price&apos;: &#xB9E4;&#xC785;&#xAE08;&#xC561;,
+          <br />&apos;expect_price&apos;: &#xD3C9;&#xAC00;&#xAE08;&#xC561;,</p>
+        <p>&apos;expect_profit&apos;: &#xD3C9;&#xAC00;&#xC218;&#xC775;,
+          <br />}</p>
+      </td>
+    </tr>
+  </tbody>
+</table>**def \_order\(self, account: str, code: str, quantity: int, price: int, flag: str, action: str\) -&gt; bool**  
+trades 속성 함수를 통해 지정가 주문하여 주문의 성공\(체결 X\) 여부를 True / False 로 리턴합니다. 계좌번호, 종목코드, 수량, 가격, 계좌 플래그, 액션\(매수 or 매도\) 를 인자로 받으며 액션은 'buy', 'sell' 문자열로 받아 \_\_trade\_actions\_\_ 속성을 통해 값을 치환하여 사용합니다. 계좌 플래그는 get\_account\_flags 를 통해 얻을 수 있습니다.
+
+**def buy\(self, account: str, code: str, quantity: int, price: int, flag: str\) -&gt; bool**  
+\_order 함수를 통해 지정가 매수를 합니다. 계좌번호, 종목코드, 수량, 가격, 계좌 플래그가 필요합니다. 계좌 플래그는 get\_account\_flags 를 통해 얻을 수 있습니다.
+
+**def sell\(self, account: str, code: str, quantity: int, price: int, flag: str\) -&gt; bool**  
+\_order 함수를 통해 지정가 매도를 합니다. 계좌번호, 종목코드, 수량, 가격, 계좌 플래그가 필요합니다. 계좌 플래그는 get\_account\_flags 를 통해 얻을 수 있습니다.
+
+**def code\_to\_name\(self, code: str\)**  
+stock\_code 속성 함수를 통해 종목 코드를 종목 이름으로 리턴합니다.
+
+**def name\_to\_code\(self, name: str\)**  
+stock\_code 속성 함수를 통해 종목 이름을 종목 코드로 리턴합니다.
+
+
+
