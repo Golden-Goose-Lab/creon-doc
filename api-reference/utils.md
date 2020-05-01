@@ -21,7 +21,7 @@ _**def snake\_to\_camel\(value: str\) -&gt; str**_
 ### timeframe\_to\_timedelta\(\)
 
 _**def timeframe\_to\_timedelta\(timeframe: tuple\) -&gt; timedelta:**_  
-수량과 타임프레임\(Integer, [TimeFrameUnit](constants.md#timeframeunit)\)을 튜플 형태로 받아 연산에 필요한 timedelta 값을 리턴하는 유틸리티 함수입니다.
+시간값과 타임프레임\(Integer, [TimeFrameUnit](constants.md#timeframeunit)\)을 튜플 형태로 받아 연산에 필요한 timedelta 값을 리턴하는 유틸리티 함수입니다.
 
 
 

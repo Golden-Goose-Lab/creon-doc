@@ -143,7 +143,7 @@ markets 속성 함수를 통해 시세 정보를 딕셔너리로 리턴합니다
     </tr>
     <tr>
       <td style="text-align:left">price</td>
-      <td style="text-align:left">&#xC2DC;&#xAC00;</td>
+      <td style="text-align:left">&#xD604;&#xAC00;</td>
     </tr>
     <tr>
       <td style="text-align:left">close_price</td>
@@ -197,7 +197,8 @@ markets 속성 함수를 통해 시세 정보를 딕셔너리로 리턴합니다
     </tr>
   </tbody>
 </table>**def fetch\_ohlcv\(self, code: str, timeframe: tuple, since: datetime, limit: int, fill\_gap=False, use\_adjusted\_price=True\) -&gt; List\[Candle\]:**  
-aaa
+chart 속성 함수를 통해 과거 시세 정보 OHLCV\(시가, 고가, 저가, 종가, 거래량\) 를 리턴하는 함수 입니다. 종목 코드, 타임프레임\(시간값, [TimeFrameUnit](constants.md#timeframeunit)\), 조회일, 최대조회수 를 인자로 받습니다. fill\_gap 선택 인자를 True 로 하면 갭보정을 적용 할 수 있으며 use\_adjusted\_price 선택인자를 False 로 하면 수정주가 사용을 안 할 수 있습니다.   
+이 [링크](https://github.com/Golden-Goose-Lab/creon/blob/master/examples/fetch_price.py)에서 예제를 확인할 수 있습니다.
 
 **def get\_holding\_stocks\(self, account\_number: str, flag: str, count: int = 50\) -&gt; dict**  
 wallets 속성 함수를 통해 종합 보유 자산 정보를 딕셔너리로 리턴합니다. 계좌번호와 계좌 플래그를 인자로 받으며 개수는 50개로 선택 인자로 받습니다. 계좌 플래그는 get\_account\_flags 를 통해 얻을 수 있습니다. 반환하는 데이터는 아래와 같습니다.
