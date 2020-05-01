@@ -6,12 +6,12 @@ description: 'https://github.com/Golden-Goose-Lab/creon/blob/master/creon/consta
 
 ### TimeFrameUnit
 
-class TimeFrameUnit\(Enum\)  
+**class TimeFrameUnit\(Enum\)**  
 
 
 ###  AccountFilter
 
-class AccountFilter\(IntFlag\)
+**class AccountFilter\(IntFlag\)**
 
 
 
