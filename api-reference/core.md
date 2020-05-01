@@ -143,7 +143,7 @@ markets 속성 함수를 통해 시세 정보를 딕셔너리로 리턴합니다
     </tr>
     <tr>
       <td style="text-align:left">price</td>
-      <td style="text-align:left">&#xD604;&#xAC00;</td>
+      <td style="text-align:left">&#xAC00;</td>
     </tr>
     <tr>
       <td style="text-align:left">close_price</td>
