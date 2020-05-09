@@ -48,31 +48,31 @@ _**class Creon**_
 크레온 래퍼 클래스입니다. 모든 주식 트레이딩 기능은 이 클래스 객체를 기반으로 수행합니다.
 
 _속성_  
-**\_\_codes\_\_ \(기본값 None\)**  
+**\_\_codes\_\_**  
 크레온 API 코드 모듈인 **CpUtil.CpCodeMgr** 의 **COMWrapper** 객체가 할당됩니다. 속성 함수로 이용 가능합니다.  
   
-**\_\_utils\_\_ \(기본값 None\)**  
+**\_\_utils\_\_**  
 크레온 API 유틸 모듈인 **CpTrade.CpTdUtil** 의 **COMWrapper** 객체가 할당됩니다. 속성 함수로 이용 가능합니다.  
   
-**\_\_trades\_\_ \(기본값 None\)**  
+**\_\_trades\_\_**  
 크레온 API 거래 모듈인 **CpTrade.CpTd0311** 의 **COMWrapper** 객체가 할당됩니다. 속성 함수로 이용 가능합니다.  
   
-**\_\_trade\_actions\_\_  \(기본값 {'sell': 1, 'buy': 2}\)**  
+**\_\_trade\_actions\_\_**  
 sell 와 buy 의 문자열을 각 각 1, 2로 치환 이용하기 위한 딕셔너리 입니다.  
   
-**\_\_markets\_\_ \(기본값 None\)**  
+**\_\_markets\_\_**  
 크레온 API 시장 모듈인 **DsCbo1.StockMst** 의 **COMWrapper** 객체가 할당됩니다. 속성 함수로 이용 가능합니다.  
   
-**\_\_wallets\_\_ \(기본값 None\)**  
+**\_\_wallets\_\_**  
 크레온 API 계좌 모듈인 **CpTrade.CpTd6033** 의 **COMWrapper** 객체가 할당됩니다. 속성 함수로 이용 가능합니다.  
   
-**\_\_stock\_code\_\_ \(기본값 None\)**  
+**\_\_stock\_code\_\_**  
 크레온 API 주식 코드 모듈인 **CpUtil.CpStockCode** 의 **COMWrapper** 객체가 할당됩니다. 속성 함수로 이용 가능합니다.  
   
-**\_\_chart\_\_ \(기본값 None\)**  
+**\_\_chart\_\_**  
 크레온 API 주식 차트 모듈인 **CpSysDib.StockChart** 의 **COMWrapper** 객체가 할당됩니다. 속성 함수로 이용 가능합니다.  
   
-**\_\_logger\_\_ \(기본값 Logger\(\_\_name\_\_\)\)**  
+**\_\_logger\_\_**  
 로깅을 위한 파이썬 내장 로거 객체가 할당됩니다.
 
 _메소드_  
