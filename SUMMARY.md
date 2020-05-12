@@ -8,4 +8,5 @@
   * [constants](api-reference/constants.md)
   * [core](api-reference/core.md)
 * [기여 가이드](contribute-guide.md)
+* [릴리즈 노트](undefined.md)
 
